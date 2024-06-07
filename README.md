@@ -1,6 +1,6 @@
 # String Manipulation em C
 
-Este projeto é um programa em C para manipulação básica de strings. O programa permite que você leia várias strings da entrada, compare-as ignorando diferenças entre maiúsculas e minúsculas, e encontre a string mais longa e a menor em ordem lexicográfica.
+Este projeto é um programa em C para manipulação básica de strings. O programa permite que você leia várias strings da entrada, compare-as ignorando diferenças entre maiúsculas e minúsculas, e encontre a string mais longa e a maior em ordem lexicográfica.
 
 ## Funcionalidades
 
@@ -8,7 +8,7 @@ Este projeto é um programa em C para manipulação básica de strings. O progra
 - **Comparação de Strings**: Compara strings ignorando diferenças entre maiúsculas e minúsculas.
 - **Identificação de Strings**:
   - Encontra a string de maior comprimento.
-  - Encontra a string menor em ordem lexicográfica.
+  - Encontra a string maior em ordem lexicográfica.
 
 ## Destaques
 
