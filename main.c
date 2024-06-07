@@ -14,22 +14,19 @@ int compareStrings(const char *str1, const char *str2) {
             return c1 - c2;
         }
         str1++;
-        
         str2++;
     }
-    return *str2 - *str1;
+    return *str1 - *str2;
 }
 
 int main() {
-    int N;
+    int N, c;
     char *strings[MAX_STRINGS];
+
     if (scanf("%d", &N) != 1 || N < 1 || N > MAX_STRINGS) {
         return 1;
     }
-
-    int c;
     while ((c = getchar()) != '\n' && c != EOF);
-
 
     for (int i = 0; i < N; i++) {
         strings[i] = malloc(MAX_STR_LEN * sizeof(char));
@@ -40,21 +37,19 @@ int main() {
     }
 
     const char *maiorComprimento = strings[0];
+    const char *maiorLexicografica = strings[0];
+
     for (int i = 1; i < N; i++) {
         if (strlen(strings[i]) > strlen(maiorComprimento)) {
             maiorComprimento = strings[i];
         }
-    }
-
-    const char *menorLexicografica = strings[0];
-    for (int i = 1; i < N; i++) {
-        if (compareStrings(strings[i], menorLexicografica) < 0) {
-            menorLexicografica = strings[i];
+        if (compareStrings(strings[i], maiorLexicografica) > 0) {
+            maiorLexicografica = strings[i];
         }
     }
 
     printf("%s\n", maiorComprimento);
-    printf("%s\n", menorLexicografica);
+    printf("%s\n", maiorLexicografica);
 
     for (int i = 0; i < N; i++) {
         free(strings[i]);
