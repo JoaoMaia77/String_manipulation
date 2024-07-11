@@ -6,6 +6,7 @@ Este projeto é um programa em C para manipulação básica de strings. O progra
 
 - **Leitura de Strings**: O programa lê múltiplas strings da entrada.
 - **Comparação de Strings**: Compara strings ignorando diferenças entre maiúsculas e minúsculas.
+- 
 - **Identificação de Strings**:
   - Encontra a string de maior comprimento.
   - Encontra a string maior em ordem lexicográfica.
